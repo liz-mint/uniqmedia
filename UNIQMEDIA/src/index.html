@@ -7,39 +7,40 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>UNIQMEDIA</title>
 </head>
 <body>
-    <header>
-        <div class="wrapper">
+    <header class="header">
+        <div class="header__wrapper">
             <div class="logo">
-                    <a href="#promo"><img src="icons/uniqmedia_logo.png" alt="uniqmedia logo"></a>
+                <a href="#up"><img src="icons/uniqmedia_logo.png" alt="uniqmedia logo"></a>
             </div>
-            <ul class="menu">
-                <li><a class="menu_link" href="#service">О нас</a></li>
-                <li><a class="menu_link" href="#case">Кейсы</a></li>
-                <li><a class="menu_link" href="#contacts">Контакты</a></li>
+            <ul class="header__menu">
+                <li><a class="header__link" href="#service">О нас</a></li>
+                <li><a class="header__link" href="#case">Кейсы</a></li>
+                <li><a class="header__link" href="#contacts">Контакты</a></li>
             </ul>
         </div>
     </header>
 
-    <section class="promo" id="promo">
+    <section class="promo" id="up">
         <!-- <img src="img/man.png" class="promo_img" alt="businessman"> -->
         <div class="container">
             <div class="row">
                 <div class="col-md-5 offset-md-7">
-                    <div class="promo_header">
-                        <h1><span class="orange">Создаем<br></span><span class="smaller">рекламу, которая<br></span><span class="blue">продает</span></h1>
+                    <div class="promo__header">
+                        <h1><span class="promo__header_orange">Создаем<br></span><span class="promo__header_smaller">рекламу, которая<br></span><span class="promo__header_blue">продает</span></h1>
                     </div>
                 </div>
                 <div class="col-md-3 offset-md-9">
-                    <div class="promo_subheader">«ЛЮБАЯ РЕКЛАМА ДОЛЖНА ПРИНОСИТЬ ПРИБЫЛЬ.<br>СЧИТАЮ САМЫЕ УСПЕШНЫЕПРОЕКТЫ ТЕ, КОТОРЫЕ ОКУПАЮТСЯ В СОТНИ РАЗ»</div>
-                    <div class="promo_title">Попырин Вадим основатель «UNIQMEDIA»</div>
+                    <div class="promo__subheader">«ЛЮБАЯ РЕКЛАМА ДОЛЖНА ПРИНОСИТЬ ПРИБЫЛЬ.<br>СЧИТАЮ САМЫЕ УСПЕШНЫЕПРОЕКТЫ ТЕ, КОТОРЫЕ ОКУПАЮТСЯ В СОТНИ РАЗ»</div>
+                    <div class="promo__caption">Попырин Вадим основатель «UNIQMEDIA»</div>
                 </div>
                 <div class="col-md-6 offset-md-6">
-                    <button class="promo_btn orange_btn">связаться</button>
-                    <button class="promo_btn blue_btn">как мы работаем</button>
+                    <a href="#contacts" class="btn btn_orange">связаться</a>
+                    <a href="#service" class="btn btn_blue">как мы работаем</a>
                 </div>
             </div>
         </div>
@@ -49,34 +50,34 @@
         <div class="label">что мы делаем?</div>
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-md-5">
-                    <div class="service_block">
-                        <div class="service_title">СТРАТЕГИЯ</div>
-                        <div class="service_descr">
+                <div class="col-md-6">
+                    <div class="service__block">
+                        <div class="service__title">СТРАТЕГИЯ</div>
+                        <div class="service__descr">
                             АНАЛИЗИРУЕМ НИШУ ВАШЕГО БРЕНДА, ДЛЯ ЭФФЕКТИВНОГО ПРОДВИЖЕНИЯ. СОЗДАЕМ СИСТЕМНЫЙ И КОМПЛЕКСНЫЙ ПОДХОД В КОММУНИКАЦИИ С ПОТРЕБИТЕЛЕМ В ONLINE и OFFLINE СРЕДАХ
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="service_block">
-                        <div class="service_title">КРЕАТИВ</div>
-                        <div class="service_descr">
+                <div class="col-md-6">
+                    <div class="service__block">
+                        <div class="service__title">КРЕАТИВ</div>
+                        <div class="service__descr">
                             ИЩЕМ НОВЫЕ И НЕОЖИДАННЫЕ РЕШЕНИЯ: ОТ ВИРУСНОГО ВИДЕО ДО УНИКАЛЬНОГО МЕРОПРИЯТИЯ
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="service_block">
-                        <div class="service_title">ПРОДЮСИРОВАНИЕ И СЕРВИС</div>
-                        <div class="service_descr">
+                <div class="col-md-6">
+                    <div class="service__block">
+                        <div class="service__title">ПРОДЮСИРОВАНИЕ И СЕРВИС</div>
+                        <div class="service__descr">
                             ИЩЕМ И ВОВЛЕКАЕМ ТАЛАНТЫ ДЛЯ ОСУЩЕСТВЛЕНИЯ ИДЕЙ ТАК, ЧТОБЫ РЕЗУЛЬТАТОМ ОСТАВАЛИСЬ ДОВОЛЬНЫ
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <div class="service_block">
-                        <div class="service_title">ДОЛГОСРОЧНАЯ КОММУНИКАЦИЯ</div>
-                        <div class="service_descr">                            
+                <div class="col-md-6">
+                    <div class="service__block">
+                        <div class="service__title">ДОЛГОСРОЧНАЯ КОММУНИКАЦИЯ</div>
+                        <div class="service__descr">                            
                             ДЕЛАЕМ ВАШ БРЕНД СИМВОЛОМ И СРЕДСТВОМ РЕШЕНИЯ ПРОБЛЕМЫ ЧЕЛОВЕКА
                         </div>
                     </div>
@@ -85,31 +86,31 @@
         </div>
     </section>
 
-    <section class="case_1" id="case">
+    <section class="case case_1" id="case">
         <div class="label">кейсы</div>
         <div class="container">
-            <div class="case_subheader">
-                <img src="img/fit-service.png" alt="fit-service logo" class="case_logo">
+            <div class="case__subheader">
+                <img src="img/fit-service.png" alt="fit-service logo" class="case__logo">
                 <p>международная сеть автосервисов</p>
             </div>
             <div class="row">
                 <div class="col-md-6 align-self-center">
-                    <div class="case_video">VIDEO</div>
+                    <div class="case__video">VIDEO</div>
                 </div>
                 <div class="col-md-6">
-                    <div class="case_block">
-                        <div class="case_title">задача:</div>
-                        <div class="case_descr">Укрепление позитивного образа компании в регионах, социальных сетях. увеличение количества запросов на покупку франшизы
+                    <div class="case__block">
+                        <div class="case__title">задача:</div>
+                        <div class="case__descr">Укрепление позитивного образа компании в регионах, социальных сетях. увеличение количества запросов на покупку франшизы
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">что было сделано:</div>
-                        <div class="case_descr">Разработка и адаптация сценариев под каждый конкретный город, привлечение профессиональной съемочной команды, комплексное и систематическое создание качественных видеороликов, посвященных открытиям станций технического обслуживания сети
+                    <div class="case__block">
+                        <div class="case__title">что было сделано:</div>
+                        <div class="case__descr">Разработка и адаптация сценариев под каждый конкретный город, привлечение профессиональной съемочной команды, комплексное и систематическое создание качественных видеороликов, посвященных открытиям станций технического обслуживания сети
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">результат:</div>
-                        <div class="case_descr">Увеличение узнаваемости бренда, лояльности к нему среди автолюбителей. Общее количество станций на данный момент выросло со 117 до 193 
+                    <div class="case__block">
+                        <div class="case__title">результат:</div>
+                        <div class="case__descr">Увеличение узнаваемости бренда, лояльности к нему среди автолюбителей. Общее количество станций на данный момент выросло со 117 до 193 
                         </div>
                     </div>
                 </div>
@@ -117,61 +118,64 @@
         </div>
     </section>
 
-    <section class="case_2">
+    <section class="case case_2">
         <div class="container">
-            <div class="case_subheader">
-                <img src="img/water_logo.png" alt="legent of siberia logo" class="case_logo">
+            <div class="case__subheader">
+                <img src="img/water_logo.png" alt="legent of siberia logo" class="case__logo">
                 <p>ПРОИЗВОДИТЕЛЬ БУТИЛИРОВАННОЙ ВОДЫ</p>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="case_block">
-                        <div class="case_title">задача:</div>
-                        <div class="case_descr">Повышение узнаваемости бренда
+                    <div class="case__block">
+                        <div class="case__title">задача:</div>
+                        <div class="case__descr">Повышение узнаваемости бренда
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">что было сделано:</div>
-                        <div class="case_descr">Написание продающего сценария, организация съемок на производстве.<br>Создание имиджевого видео с акцентом на преимущество конкретного бренда
+                    <div class="case__block">
+                        <div class="case__title">что было сделано:</div>
+                        <div class="case__descr">Написание продающего сценария, организация съемок на производстве.<br>Создание имиджевого видео с акцентом на преимущество конкретного бренда
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">результат:</div>
-                        <div class="case_descr">Увеличение каналов сбыта в розничных магазинах г.Новосибирска
+                    <div class="case__block">
+                        <div class="case__title">результат:</div>
+                        <div class="case__descr">Увеличение каналов сбыта в розничных магазинах г.Новосибирска
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center">
-                    <div class="case_video">VIDEO</div>
+                    <div class="case__video">VIDEO</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="case_3">
+    <section class="case case_3">
         <div class="container">
-            <div class="case_subheader">
-                <img src="img/floors.png" alt="Этажи logo" class="case_logo">
+            <div class="case__subheader">
+                <img src="img/floors.png" alt="Этажи logo" class="case__logo">
                 <p>ФЕДЕРАЛЬНАЯ РИЭЛТОРСКАЯ КОМПАНИЯ (МОСКВА)</p>
             </div>
             <div class="row">
                 <div class="col-md-6 align-self-center">
-                    <div class="case_video">VIDEO</div>
+                    <div class="case__video">VIDEO</div>
                 </div>
                 <div class="col-md-6">
-                    <div class="case_block">
-                        <div class="case_title">задача:</div>
-                        <div class="case_descr">УЛУЧШЕНИЕ РЕПУТАЦИИ РИЭЛТОРОВ КОМПАНИИ, ПОВЫШЕНИЕ ДОВЕРИТЕЛЬНОГО ОТНОШЕНИЯ КЛИЕНТОВ, УВЕЛИЧЕНИЕ ПОТОКА ПОТЕНЦИАЛЬНЫХ СОТРУДНИКОВ
+                    <div class="case__block">
+                        <div class="case__title">задача:</div>
+                        <div class="case__descr">
+                            Улучшение репутации риэлторов компании, повышение доверительного отношения клиентов, увеличение потока потенциальных сотрудников
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">что было сделано:</div>
-                        <div class="case_descr">РАЗРАБОТКА СЦЕНАРИЯ, ПРИВЛЕЧЕНИЕ ПРОФЕССИОНАЛЬНОЙ СЪЕМОЧНОЙ КОМАНДЫ, СОЗДАНИЕ СЕРИИ ИМИДЖЕВЫХ РОЛИКОВ-ИНТЕРВЬЮ, ЗАПУСК РЕКЛАМЫ НА YOUTUBE КАНАЛЕ КОМПАНИИ
+                    <div class="case__block">
+                        <div class="case__title">что было сделано:</div>
+                        <div class="case__descr">
+                            Разработка сценария, привлечение профессиональной съемочной команды, создание серии имиджевых роликов-интервью, запуск рекламы на YouTube канале компании
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">результат:</div>
-                        <div class="case_descr">УВЕЛИЧЕНИЕ КОЛИЧЕСТВА ПОЛОЖИТЕЛЬНЫХ ОТЗЫВОВ В СОЦИАЛЬНЫХ СЕТЯХ О РАБОТЕ СОТРУДНИКОВ, УВЕЛИЧЕНИЕ ШТАТА РАБОТНИКОВ В НОВОМ ОФИСЕ, У СТАНЦИИ МЕТРО «СОКОЛ»  
+                    <div class="case__block">
+                        <div class="case__title">результат:</div>
+                        <div class="case__descr">
+                            Увеличение количества положительных отзывов в социальных сетях о работе сотрудников, увеличение штата работников в новом офисе у станции метро «Сокол»
                         </div>
                     </div>
                 </div>
@@ -179,32 +183,34 @@
         </div>
     </section>
 
-    <section class="case_4">
+    <section class="case case_4">
         <div class="container">
-            <div class="case_subheader">
-                <img src="img/laserlove.png" alt="legent of siberia logo" class="case_logo">
+            <div class="case__subheader">
+                <img src="img/laserlove.png" alt="legent of siberia logo" class="case__logo">
                 <p>ФЕДЕРАЛЬНАЯ СЕТЬ СТУДИЙ ЛАЗЕРНОЙ ЭПИЛЯЦИИ</p>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="case_block">
-                        <div class="case_title">задача:</div>
-                        <div class="case_descr">УЛУЧШЕНИЕ КАЧЕСТВА СЕРВИСА И СОЗДАНИЕ ПРОДАЮЩЕГО ВИДЕО
+                    <div class="case__block">
+                        <div class="case__title">задача:</div>
+                        <div class="case__descr">Улучшение качества сервиса и создание продающего видео
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">что было сделано:</div>
-                        <div class="case_descr">СОЗДАНИЕ СЕРИИ ОБУЧАЮЩИХ ВИДЕО, АНАЛИЗ ЦА КОМПАНИИ, СОЗДАНИЕ КОНЦЕПЦИИ ПРОДАЮЩИХ АНИМАЦИОННЫХ 	ВИДЕОРОЛИКОВ И ПОСЛЕДУЮЩЕЕ ИХ ПРОИЗВОДСТВО
+                    <div class="case__block">
+                        <div class="case__title">что было сделано:</div>
+                        <div class="case__descr">
+                            Создание серии обучающих видео, анализ ЦА компании, создание концепции продающих анимационных видеороликов и последующее их производство
                         </div>
                     </div>
-                    <div class="case_block">
-                        <div class="case_title">результат:</div>
-                        <div class="case_descr">УВЕЛИЧЕНИЕ КОЛИЧЕСТВА ПОЛОЖИТЕЛЬНЫХ ОТЗЫВОВ О РАБОТЕ СОТРУДНИКОВ, УВЕЛИЧЕНИЕ СРЕДНЕГО КОЛИЧЕСТВА ПОСЕЩЕНИЙ СТУДИЙ В РЕГИОНАХ, ГДЕ ЗАПУСКАЛАСЬ РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ
+                    <div class="case__block">
+                        <div class="case__title">результат:</div>
+                        <div class="case__descr">
+                            Увеличение количества положительных отзывов о работе сотрудников, увеличение среднего количества посещений студий в регионах, где запускалась реклама в социальных сетях
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center">
-                    <div class="case_video">VIDEO</div>
+                    <div class="case__video">VIDEO</div>
                 </div>
             </div>
         </div>
@@ -213,38 +219,34 @@
     <section class="reasons">
         <div class="label">Почему мы?</div>
         <div class="container">
-            <!-- <div class="reasons_header">
-                <img src="icons/uniqmedia_logo.png" alt="uniqmedia logo">
-                <div class="company_title">Другая<br>компания</div>
-            </div> -->
             <div class="row">
                 <div class="col-md-5 offset-md-1">
-                    <div class="reasons_title reasons_title_img">
+                    <div class="reasons__title reasons__title_img">
                         <img src="icons/uniqmedia_logo.png" alt="uniqmedia logo">
                     </div>
-                    <div class="reasons_block reasons_block_blue">
-                        <ul>
-                            <li class="reasons_item">ЭФФЕКТИВНЫЙ ПРОДУКТ</li>
-                            <li class="reasons_item">ЛЮБЫЕ ФОРМАТЫ РЕКЛАМЫ<br><span class="smaller">(ОТ EVENT МЕРОПРИЯТИЙ ДО ПРОДАЮЩИХ ВИДЕО)</span></li>
-                            <li class="reasons_item">КОМАНДА ПРОФЕССИОНАЛОВ</li>
-                            <li class="reasons_item">ОФИЦИАЛЬНЫЙ ДОГОВОР</li>
-                            <li class="reasons_item">ПОСТОЯННЫЙ КОНТАКТ, 24\7</li>
-                            <li class="reasons_item">ВЫГОДНОЕ СОТРУДНИЧЕСТВО</li>
+                    <div class="reasons__block reasons__block_blue">
+                        <ul class="easons__list_">
+                            <li class="reasons__item">ЭФФЕКТИВНЫЙ ПРОДУКТ</li>
+                            <li class="reasons__item">ЛЮБЫЕ ФОРМАТЫ РЕКЛАМЫ<br><span class="easons__item_smaller">(ОТ EVENT МЕРОПРИЯТИЙ ДО ПРОДАЮЩИХ ВИДЕО)</span></li>
+                            <li class="reasons__item">КОМАНДА ПРОФЕССИОНАЛОВ</li>
+                            <li class="reasons__item">ОФИЦИАЛЬНЫЙ ДОГОВОР</li>
+                            <li class="reasons__item">ПОСТОЯННЫЙ КОНТАКТ, 24\7</li>
+                            <li class="reasons__item">ВЫГОДНОЕ СОТРУДНИЧЕСТВО</li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="reasons_title">
-                        <div class="reasons_title_other">Другая<br>компания</div>
+                    <div class="reasons__title">
+                        <div class="reasons__title_other">Другая<br>компания</div>
                     </div>
-                    <div class="reasons_block reasons_block_orange">
+                    <div class="reasons__block reasons__block_orange">
                         <ul>
-                            <li class="reasons_item">НЕПРЕДСКАЗУЕМЫЙ РЕЗУЛЬТАТ</li>
-                            <li class="reasons_item">УЗКИЙ ПРОФИЛЬ</li>
-                            <li class="reasons_item">МАЛО ОПЫТА, ЧЕЛОВЕК-ОРКЕСТР</li>
-                            <li class="reasons_item">ОТСУТСТВИЕ ГАРАНТИЙ<br>ПО ВРЕМЕНИ И ОБЪЕМУ РАБОТ</li>
-                            <li class="reasons_item">СЛОЖНАЯ СТРУКТУРА КОММУНИКАЦИЙ</li>
-                            <li class="reasons_item">СЛИШКОМ ДЕШЕВО \ ДОРОГО</li>
+                            <li class="reasons__item">НЕПРЕДСКАЗУЕМЫЙ РЕЗУЛЬТАТ</li>
+                            <li class="reasons__item">УЗКИЙ ПРОФИЛЬ</li>
+                            <li class="reasons__item">МАЛО ОПЫТА, ЧЕЛОВЕК-ОРКЕСТР</li>
+                            <li class="reasons__item">ОТСУТСТВИЕ ГАРАНТИЙ<br>ПО ВРЕМЕНИ И ОБЪЕМУ РАБОТ</li>
+                            <li class="reasons__item">СЛОЖНАЯ СТРУКТУРА КОММУНИКАЦИЙ</li>
+                            <li class="reasons__item">СЛИШКОМ ДЕШЕВО \ ДОРОГО</li>
                         </ul>
                     </div>
                 </div>
@@ -255,75 +257,88 @@
     <section class="clients">
         <div class="label">наши клиенты</div>
         <div class="container">
-            <h1 class="clients_header">нам доверяют<span class="orange_big">лидеры</span>в своих нишах</h1>
-            <div class="clients_block">
+            <h2 class="clients__header">нам доверяют<span class="clients__header_orange-big">лидеры</span>в своих нишах</h2>
+            <div class="clients__block">
                 <img src="img/logos.png" alt="логотипы компаний">
             </div>
-            <h2 class="clients_subheader">мы <span class="blue_bold">работаем</span> так, что с нами сотрудничают <span class="blue_bold">постоянно</span></h2>
+            <h2 class="clients__subheader">мы <span class="clients__subheader_blue-bold">работаем</span> так, что с нами сотрудничают <span class="clients__subheader_blue-bold">постоянно</span></h2>
         </div>
     </section>
 
     <section class="statistics">
         <div class="label">немного статистики</div>
         <div class="container">
-            <div class="statistics_block">
-                <div class="statistics_square">1</div>
-                <div class="statistics_text">НЕДЕЛЯ В СРЕДНЕМ ТРЕБУЕТСЯ, ДЛЯ 
-                    ЗАВЕРШЕНИЯ ПРОЕКТА (<span class="orange">ОТ ИДЕИ ДО ЗАПУСКА</span>)</div>
+            <div class="statistics__block">
+                <div class="statistics__square">1</div>
+                <div class="statistics__text_wrapper">
+                    <div class="statistics__text">НЕДЕЛЯ В СРЕДНЕМ ТРЕБУЕТСЯ, ДЛЯ 
+                        ЗАВЕРШЕНИЯ ПРОЕКТА (<span class="statistics__text_orange">ОТ ИДЕИ ДО ЗАПУСКА</span>)
+                    </div>
+                </div>
+
             </div>
-            <div class="statistics_block">
-                <div class="statistics_square">138</div>
-                <div class="statistics_text">ПРОЕКТОВ, <span class="orange">ЗАВЕРШЕННЫХ</span>  С НЕОБХОДИМЫМ <span class="orange">РЕЗУЛЬТАТОМ</span></div>
+            <div class="statistics__block">
+                <div class="statistics__square">138</div>
+                <div class="statistics__text_wrapper">
+                    <div class="statistics__text">ПРОЕКТОВ, <span class="statistics__text_orange">ЗАВЕРШЕННЫХ</span>  С НЕОБХОДИМЫМ <span class="statistics__text_orange">РЕЗУЛЬТАТОМ</span>
+                    </div>
+                </div>    
             </div>
-            <div class="statistics_block">
-                <div class="statistics_square">19</div>
-                <div class="statistics_text"><span class="orange">РЕГИОНАЛЬНЫХ</span>, 
-                    <span class="orange">ФЕДЕРАЛЬНЫХ</span> И <span class="orange">МЕЖДУНАРОДНЫХ</span> 
-                    КОМПАНИЙ РАБОТАЛИ С НАМИ В 2018 ГОДУ</div>
+
+            <div class="statistics__block">
+                <div class="statistics__square">19</div>
+                <div class="statistics__text_wrapper">
+                    <div class="statistics__text"><span class="statistics__text_orange">РЕГИОНАЛЬНЫХ</span>, 
+                        <span class="statistics__text_orange">ФЕДЕРАЛЬНЫХ</span> И <span class="statistics__text_orange">МЕЖДУНАРОДНЫХ</span> 
+                        КОМПАНИЙ РАБОТАЛИ С НАМИ В 2018 ГОДУ
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="include">
         <div class="container">
-            <h2 class="include_header"><span class="blue">включаемся</span><br><span class="smaller">в ваш проект</span><br><span class="orange">на любом этапе</span></h2>
+            <h2 class="include__header">
+                <span class="include__header_blue">включаемся</span><br><span class="include__header_smaller">в ваш проект</span><br><span class="include__header_orange">на любом этапе</span>
+            </h2>
             <div class="row">
                 <div class="col-md-3">
-                    <div class="include_block">
-                        <div class="include_title">
-                            «СОВСЕМ <span class="orange">НЕ ЯСНО</span> ЧТО ДЕЛАТЬ»
+                    <div class="include__block">
+                        <div class="include__title">
+                            «СОВСЕМ <span class="include__title_orange">НЕ ЯСНО</span> ЧТО ДЕЛАТЬ»
                         </div>
-                        <div class="include_square">1</div>
-                        <div class="include_subtitle">
+                        <div class="include__square">1</div>
+                        <div class="include__subtitle">
                             ПОКАЖЕМ И РАССКАЖЕМ ВАРИАНТЫ ПРОДВИЖЕНИЯ ДЛЯ ВАШЕГО БРЕНДА
                         </div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="include_block">
-                        <div class="include_title">
-                            «ЕСТЬ <span class="orange">ИДЕЯ</span>, НО НЕ ЗНАЕМ КАК»
+                    <div class="include__block">
+                        <div class="include__title">
+                            «ЕСТЬ <span class="include__title_orange">ИДЕЯ</span>, НО НЕ ЗНАЕМ КАК»
                         </div>
-                        <div class="include_square">2</div>
-                        <div class="include_subtitle">СДЕЛАЕМ ПРОЕКТ ВМЕСТЕ</div>
+                        <div class="include__square">2</div>
+                        <div class="include__subtitle">СДЕЛАЕМ ПРОЕКТ ВМЕСТЕ</div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="include_block">
-                        <div class="include_title">
-                            «СДЕЛАТЬ НУЖНО БЫЛО ЕЩЕ <span class="orange">ВЧЕРА»</span>
+                    <div class="include__block">
+                        <div class="include__title">
+                            «СДЕЛАТЬ НУЖНО БЫЛО ЕЩЕ <span class="include__title_orange">ВЧЕРА»</span>
                         </div>
-                        <div class="include_square">3</div>
-                        <div class="include_subtitle">РАБОТАЕМ МАКСИМАЛЬНО ОПЕРАТИВНО</div>
+                        <div class="include__square">3</div>
+                        <div class="include__subtitle">РАБОТАЕМ МАКСИМАЛЬНО ОПЕРАТИВНО</div>
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="include_block last">
-                        <div class="include_title">
-                            «ПРОЕКТ ЗАПУЩЕН, НО ЧТО-ТО <span class="orange">НЕ ТО</span>»
+                    <div class="include__block include__block_last">
+                        <div class="include__title">
+                            «ПРОЕКТ ЗАПУЩЕН, НО ЧТО-ТО <span class="include__title_orange">НЕ ТО</span>»
                         </div>
-                        <div class="include_square include_square_last">4</div>
-                        <div class="include_subtitle">
+                        <div class="include__square include__square_last">4</div>
+                        <div class="include__subtitle">
                             УЛУЧШИМ, ЗАМЕНИМ, ИСПРАВИМ СДЕЛАЕМ БОЛЕЕ ЭФФЕКТИВНО
                         </div>
                     </div>
@@ -337,25 +352,25 @@
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-md-4 ">
-                    <div class="contacts_block">
-                        <div class="contacts_title"><span class="blue">СВЯЖИТЕСЬ</span> С НАМИ</div>
-                        <div class="contacts_link">
+                    <div class="contacts__block">
+                        <div class="contacts__title"><span class="contacts__title_blue">СВЯЖИТЕСЬ</span> С НАМИ</div>
+                        <div class="contacts__link">
                             <img src="icons/phone_icon.png" alt="phone icon">
                             <a href="tel:89231000622">+7 923 100 06 22</a>
                         </div>
-                        <div class="contacts_link">
+                        <div class="contacts__link">
                             <p href="">info@uniqmedia.ru</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="contacts_block">
-                        <div class="contacts_title">наши <span class="blue">соц.сети</span></div>
-                        <div class="contacts_link">
+                    <div class="contacts__block">
+                        <div class="contacts__title">наши <span class="contacts__title_blue">соц.сети</span></div>
+                        <div class="contacts__link">
                             <img src="icons/inst_icon.png" alt="instagram icon">
                             <a href="instagram.com/uniqmedia.ru">uniqmedia.ru</a>
                         </div>
-                        <div class="contacts_link">
+                        <div class="contacts__link">
                             <img src="icons/yu_icon.png" alt="youtube icon">
                             <a href="youtube.com/uniqmedia">uniqmedia</a>
                         </div>
@@ -364,5 +379,13 @@
             </div>
         </div>
     </section>
+
+    <a href="#up" class="page-up"><img src="icons/up.svg" alt="arrow-up"></a>
+
+    <!-- <script src="js/smoth-scroll.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.spincrement.min.js"></script>
+    <script src="js/jquery.viewportcheker.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

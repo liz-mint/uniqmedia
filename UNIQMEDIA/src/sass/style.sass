@@ -2,22 +2,20 @@ $orange: #FF7808
 $blue: #06C9C9
 $gray: #2C2B29
 
+@import 'blocks/header'
+@import 'blocks/case'
+@import 'blocks/reasons'
+@import 'blocks/btn'
+@import 'blocks/page-up-button'
+@import 'blocks/include'
 *
 	font-family: 'Raleway', sans-serif
 
-header
-	position: relative
-	height: 80px
-.wrapper   
-	display: flex
-	position: fixed
-	width: 100%
-	z-index: 5
-	justify-content: space-between
-	align-items: center
-	height: 80px
-	background-color: #000000
-	padding: 25px 79px 25px 37px
+.hidden
+     opacity: 0
+
+.visible
+     opacity: 1
 
 .logo
 	width: 409px
@@ -25,19 +23,6 @@ header
 	img
 		width: 100%
 		height: 100%
-
-.menu
-	display: flex
-	justify-content: space-between
-	width: 314px
-	list-style-type: none
-	&_link
-		font-weight: 400
-		font-size: 20px
-		color: #FFFFFF
-		&:hover
-			text-decoration: none
-			color: $blue
 
 .promo
 	min-height: 624px
@@ -47,9 +32,9 @@ header
 	&_img
 		width: 40%
 		height: 624px
-	&_header
+	&__header
 		// margin-left: 600px
-		width: 414px
+		width: 430px
 		h1
 			font-weight: 700
 			font-size: 65px
@@ -57,15 +42,15 @@ header
 			text-transform: uppercase
 			line-height: 65px
 			text-align: center
-		.smaller
+		&_smaller
 			font-size: 38px
 			letter-spacing: none
 			color: #FFFFFF
-		.orange
+		&_orange
 			color: $orange
-		.blue
+		&_blue
 			color: $blue
-	&_subheader
+	&__subheader
 		// margin-left: 872px
 		margin-top: 56px
 		width: 242px
@@ -73,46 +58,26 @@ header
 		font-size: 16px
 		line-height: 19px
 		color: #FFFFFF
-	&_title
+	&__caption
 		// margin-left: 872px
 		margin-top: 3px
+		margin-bottom: 46px
 		width: 242px
 		font-weight: 400
 		font-size: 16px
 		line-height: 19px
 		text-align: right
 		color: #B7B7B7
-	&_btn
-		margin-top: 46px
-		padding: 20px 0
-		width: 230px
-		height: 60px
-		border: none
-		mix-blend-mode: normal
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-		font-weight: 400
-		font-size: 18px
-		line-height: 21px
-		text-transform: uppercase
-		color: #FFFFFF
-		text-align: center
-	.orange_btn
-		margin-right: 57px
-		background-color: $orange
-		mix-blend-mode: normal
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-	.blue_btn
-		background-color: $blue
 
 .service
 	padding: 40px 0 52px 0
 	min-height: 625px
 	background: url('../img/bg/screen_1_bg.png') center (center / cover) no-repeat
 	background-color: $gray
-	&_block
-		width: 505px
+	&__block
+		width: 515px
 		margin: 50px 0 30px 0
-	&_title
+	&__title
 		display: inline
 		padding: 5px 10px
 		background-color: $blue
@@ -121,162 +86,31 @@ header
 		letter-spacing: 0.05em
 		text-transform: uppercase
 		color: #FFFFFF
-	&_descr
+	&__descr
 		margin-top: 29px
 		font-weight: 400
 		font-size: 20px
-		line-height: 23px
+		line-height: 26px
 		letter-spacing: 0.01em
 		text-transform: uppercase
 		color: #FFFFFF
+
 .label
 	margin-left: 55px
 	font-weight: bold
 	font-size: 18px
 	line-height: 21px
 	text-transform: uppercase
-	color: $blue
+	color: $blue 
 
-.case_1
-	min-height: 705px
-	padding: 40px 0 86px 0
-	background: url('../img/bg/fitservice_bg.png') center (center / cover) no-repeat
-	background-color: $gray
 
-.case_2   
-	min-height: 705px
-	padding: 40px 0 86px 0
-	background: url('../img/bg/water_bg.png') center (center / cover) no-repeat
-	background-color: $gray
-
-.case_3   
-	min-height: 705px
-	padding: 40px 0 86px 0
-	background: url('../img/bg/floors_bg.png') center (center / cover) no-repeat
-	background-color: $gray
-
-.case_4   
-	min-height: 705px
-	padding: 40px 0 86px 0
-	background: url('../img/bg/laserlove_bg.png') center (center / cover) no-repeat
-	background-color: $gray
-
-.case
-	&_logo
-		width: 250px
-		margin-right: 35px
-	&_subheader
-		display: flex
-		justify-content: center
-		align-items: center
-		margin: 0 auto
-		margin-top: 50px
-		margin-bottom: 37px
-		p
-			margin: 0
-			font-weight: 400
-			font-size: 26px
-			text-transform: uppercase
-			color: #FFFFFF
-	&_block
-		margin-left: 30px
-		margin-top: 25px
-	&_title
-		font-weight: 700
-		font-size: 24px
-		letter-spacing: 0.05em
-		text-transform: uppercase
-		color: $blue
-	&_descr
-		margin-top: 8px
-		font-weight: 400
-		font-size: 18px
-		line-height: 21px
-		letter-spacing: 0.01em
-		color: #FFFFFF
-	&_video
-		width: 570px
-		height: 332px
-		background-color: #000000
-		color: #fff
-		padding: 138px  
-.reasons
-	min-height: 660px
-	padding: 40px 0 53px
-	background: url('../img/bg/why_bg.png') center (center / cover) no-repeat
-	background-color: $gray
-	&_header
-		display: flex
-		justify-content: space-between
-		align-items: center
-		margin: 0 auto
-		width: 788px
-		margin-top: 41px
-		img
-			display: block
-			margin: 0 auto
-			width: 329px
-		.company_title
-			font-weight: 700
-			font-size: 22px
-			line-height: 26px
-			text-align: center
-			text-transform: uppercase
-			color: $orange
-	&_block
-		width: 387px
-		height: 429px
-		margin: 0 auto
-		margin-top: 25px
-		padding: 0 
-		&_blue
-			background: rgba(6, 201, 201, 0.1)
-		&_orange
-			background: rgba(255, 120, 8, 0.1)
-			li
-				font-weight: 400
-		ul
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-			align-items: center
-			height: 100%
-			padding: 37px 0
-			list-style-type: none
-	&_item
-		font-weight: 700
-		font-size: 20px
-		text-transform: uppercase
-		color: #FFFFFF
-		text-align: center
-		.smaller
-			font-size: 12px
-			font-weight: normal
-	&_title
-		width: 387px
-		height: 51px
-		margin: 0 auto
-		margin-top: 51px
-		&_img
-			padding: 12px 0
-		img
-			display: block
-			margin: 0 auto
-			width: 329px
-		&_other
-			font-weight: 700
-			font-size: 22px
-			line-height: 26px
-			text-align: center
-			text-transform: uppercase
-			color: $orange
 
 
 .clients
 	padding: 40px 0 48px 0
 	min-height: 751px
 	background-color: $gray
-	&_header
+	&__header
 		display: block
 		margin: 0 auto
 		margin-top: 26px
@@ -285,12 +119,12 @@ header
 		text-transform: uppercase
 		color: #FFFFFF
 		text-align: center
-		.orange_big
+		&_orange-big
 			font-size: 60px
 			letter-spacing: 0.03em
 			color: $orange
 			margin: 0 25px
-	&_block
+	&__block
 		margin: 0 auto
 		margin-top: 26px
 		padding: 26px 35px
@@ -300,7 +134,7 @@ header
 		img
 			width: 900px
 			height: 407px
-	&_subheader
+	&__subheader
 		display: block
 		margin: 0 auto
 		margin-top: 26px
@@ -309,7 +143,7 @@ header
 		text-transform: uppercase
 		color: #FFFFFF
 		text-align: center
-		.blue_bold
+		&_blue-bold
 			font-weight: 700
 			color: $blue
 
@@ -318,12 +152,13 @@ header
 	padding: 40px 0 71px
 	background: url('../img/bg/statistic_bg.png') center (center / cover) no-repeat
 	background-color: $gray
-	&_block
+	&__block
 		display: flex
 		margin: 0 auto
 		margin-top: 60px
 		width: 770px
-	&_square
+		overflow: hidden
+	&__square
 		width: 125px
 		height: 125px
 		background-color: $blue
@@ -334,7 +169,7 @@ header
 		letter-spacing: 0.03em
 		color: #FFFFFF
 		text-align: center
-	&_text
+	&__text
 		width: 645px
 		height: 100px
 		margin: 12px 0
@@ -346,92 +181,34 @@ header
 		letter-spacing: 0.04em
 		text-transform: uppercase
 		color: #FFFFFF
-		.orange
+		transform: translateX(-100%)
+        transition: 1s all
+		&_active
+			transform: translateX(0%)
+			transition: 1s all
+		&_wrapper
+			overflow: hidden
+		&_orange
 			color: $orange
-
-.include
-	min-height: 620px
-	padding: 50px 0 103px 0
-	background: url('../img/bg/include_bg.png') center (center / cover) no-repeat
-	background-color: $gray
-	&_header
-		font-weight: 700
-		font-size: 48px
-		line-height: 56px
-		letter-spacing: 0.03em
-		text-transform: uppercase
-		.smaller
-			font-size: 32px
-			color: #ffffff
-	.orange
-		color: $orange
-	.blue
-		color: $blue
-	&_block
-		margin: 0 auto
-		margin-top: 45px			
-	&_title
-		font-weight: 700
-		font-size: 24px
-		line-height: 142.2%
-		text-align: center
-		text-transform: uppercase
-		color: #FFFFFF
-	&_square
-		position: relative
-		width: 90px
-		height: 90px
-		margin: 0 auto
-		margin-top: 27px
-		background-color: $blue
-		padding: 16px 0
-		font-family: 'Montserrat' , sans-serif
-		font-weight: 700
-		font-size: 58px
-		line-height: 1em
-		color: #FFFFFF
-		text-align: center
-		&::after
-			content: ''
-			display: block
-			position: absolute
-			top: 43px
-			left: 90px
-			width: 210px
-			height: 4px
-			background-color: $blue
-			&:last-child
-				display: none
-		&_last
-			&::after
-				display: none
-	&_subtitle
-		margin-top: 25px
-		font-weight: 400
-		font-size: 16px
-		line-height: 19px
-		text-align: center
-		text-transform: uppercase
-		color: #FFFFFF
 
 .contacts
 	min-height: 509px
 	padding: 40px 0 174px 0
 	background: url('../img/bg/contacts_bg.png') center (center / cover) no-repeat
 	background-color: $gray
-	&_block
+	&__block
 		width: 334px
 		margin: 0 auto
 		margin-top: 108px
-	&_title
+	&__title
 		margin-bottom: 26px
 		font-weight: 700
 		font-size: 30px
 		text-transform: uppercase
 		color: #ffffff
-		.blue
+		&_blue
 			color: $blue
-	&_link
+	&__link
 		margin-top: 8px
 		img
 			width: 32px
