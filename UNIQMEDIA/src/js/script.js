@@ -6,8 +6,11 @@ $(document).ready(function(){
         } else {
           $('.page-up').fadeOut();
         }
+
+        $('.case').bgscroll();
       });
-      $("a[href^='#']").click(function(e){
+
+    $("a[href^='#']").click(function(e){
         var _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top}, 777);
         e.preventDefault();
