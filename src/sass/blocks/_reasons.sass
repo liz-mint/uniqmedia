@@ -1,7 +1,7 @@
 .reasons
 	min-height: 660px
-	padding: 40px 0 53px
-	background: url('../img/bg/why_bg.png') center (center / cover) no-repeat
+	padding: 40px 0 100px
+	// background: url('../img/bg/why_bg.png') center (center / cover) no-repeat
 	background-color: $gray
 	&__block
 		width: 387px
@@ -12,12 +12,14 @@
 		transition: 0.5s all
 		&_blue
 			background: rgba(6, 201, 201, 0.1)
+			box-shadow: 0 0 10px $blue
 			&:hover 
-				box-shadow: 0 0 10px $blue
+				box-shadow: 0 0 20px $blue
 		&_orange
 			background: rgba(255, 120, 8, 0.1)
+			box-shadow: 0 0 10px $orange
 			&:hover 
-				box-shadow: 0 0 10px $orange
+				box-shadow: 0 0 20px $orange
 			li
 				font-weight: 400
 		ul

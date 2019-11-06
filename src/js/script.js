@@ -6,8 +6,6 @@ $(document).ready(function(){
         } else {
           $('.page-up').fadeOut();
         }
-
-        $('.case').bgscroll();
       });
 
     $("a[href^='#']").click(function(e){
@@ -18,7 +16,7 @@ $(document).ready(function(){
     });
 
     //counter increment
-    /* let show = true;
+    let show = true;
     const countbox = ".statistics__block";
     $(window).on("scroll load resize", function () {
         if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
@@ -36,7 +34,7 @@ $(document).ready(function(){
              
             show = false;
         }
-    }); */
+    });
 
     $('.case__block').addClass("hidden").viewportChecker({
         classToAdd: 'visible animated fadeInDown',
