@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     $("a[href^='#']").click(function(e){
         var _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top}, 777);
+        $("html, body").animate({scrollTop: $(_href).offset().top - $('.header').height()}, 777);
         e.preventDefault();
         return false;
     });
