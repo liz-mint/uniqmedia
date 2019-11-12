@@ -1,8 +1,12 @@
 .include
 	min-height: 620px
 	padding: 50px 0 103px 0
-	background: url('../img/bg/include_bg.png') center (center / cover) no-repeat
+	background-position: center
+	background-repeat:
+	background-size: cover
 	background-color: $gray
+	background-attachment: fixed
+	background-image: url('../img/bg/include_bg.png')
 	&__header
 		font-weight: 700
 		font-size: 48px
@@ -18,7 +22,7 @@
 			color: $blue
 	&__block
 		margin: 0 auto
-		margin-top: 45px			
+		margin-top: 45px
 	&__title
 		font-weight: 700
 		font-size: 24px
@@ -46,10 +50,10 @@
 			content: ''
 			display: block
 			position: absolute
-			top: 50%;
-			transform: translateY(-50%);
-			left: 100%;
-			width: 220%;
+			top: 50%
+			transform: translateY(-50%)
+			left: 100%
+			width: 220%
 			height: 4px
 			background-color: $blue
 			&:last-child
