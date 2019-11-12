@@ -1,18 +1,36 @@
-$(document).ready(function(){
+$(document).ready(function () {
     //smoth scroll and page-up
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 1600) {
-          $('.page-up').fadeIn();
+            $('.page-up').fadeIn();
         } else {
-          $('.page-up').fadeOut();
+            $('.page-up').fadeOut();
         }
-      });
+    });
 
-    $("a[href^='#']").click(function(e){
+    $("a[href^='#']").click(function (e) {
         var _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top - $('.header').height()}, 777);
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top - $('.header').height()
+        }, 777);
         e.preventDefault();
         return false;
+    });
+
+    // Set iframe attributes when the show instance method is called
+    $("#videoModal").on("show.bs.modal", function (event) {
+        let button = $(event.relatedTarget); // Button that triggered the modal
+        let url = button.data("video"); // Extract url from data-video attribute
+
+        $(this).find("iframe").attr({
+            src: url,
+            allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        });
+        $(this).find("iframe").css('width', '100%');
+    });
+    // Remove iframe attributes when the modal has finished being hidden from the user
+    $("#videoModal").on("hidden.bs.modal", function () {
+        $("#videoModal iframe").removeAttr("src allow");
     });
 
     //counter increment
@@ -31,7 +49,7 @@ $(document).ready(function(){
                 thousandSeparator: ",",
                 duration: 1200
             });
-             
+
             show = false;
         }
     });
@@ -46,4 +64,3 @@ $(document).ready(function(){
         offset: 100
     });
 })
-

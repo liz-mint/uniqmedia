@@ -20,9 +20,20 @@
 			color: $orange
 		&_blue
 			color: $blue
+	&__blocks
+		display: flex
+		justify-content: space-between
+		margin-top: 45px
 	&__block
 		margin: 0 auto
-		margin-top: 45px
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		width: 25%
+		padding: 0 10px
+		&:last-child .include__square::after
+			display: none
 	&__title
 		font-weight: 700
 		font-size: 24px
@@ -56,11 +67,6 @@
 			width: 220%
 			height: 4px
 			background-color: $blue
-			&:last-child
-				display: none
-		&_last
-			&::after
-				display: none
 	&__subtitle
 		margin-top: 25px
 		font-weight: 400
