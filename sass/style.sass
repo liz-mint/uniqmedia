@@ -8,7 +8,7 @@ $gray: #1d1d1d  //#2C2B29
 @import 'blocks/btn'
 @import 'blocks/page-up-button'
 @import 'blocks/include'
-@import 'blocks/video-bg'
+@import 'blocks/promo'
 @import 'blocks/down-btn'
 *
 	font-family: 'Raleway', sans-serif
@@ -25,63 +25,7 @@ $gray: #1d1d1d  //#2C2B29
 		width: 100%
 		height: 100%
 
-.promo
-	position: relative
-	margin-top: -80px 
-	min-height: 624px
-	padding: 0
-	// background: url('../img/bg/lenta_2.jpg') center (center / cover) no-repeat
-	background-color: $gray
-	// box-shadow: inset 0 0 100px #000
-	&_img
-		width: 40%
-		height: 624px
-	&__content
-		position: absolute
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
-		z-index: 2
-	&__header
-		// margin-left: 600px
-		// width: 430px
-		h1
-			font-weight: 700
-			font-size: 70px
-			letter-spacing: 0.08em
-			text-transform: uppercase
-			line-height: 65px
-			text-align: center
-		&_smaller
-			font-size: 38px
-			letter-spacing: 0.03em
-			color: #FFFFFF
-		&_orange
-			color: $orange
-		&_blue
-			color: $blue
-	&__buttons
-		margin-top: 50px
-		display: flex
-		justify-content: center
-	&__subheader
-		// margin-left: 872px
-		margin-top: 56px
-		width: 242px
-		font-weight: 400
-		font-size: 16px
-		line-height: 19px
-		color: #FFFFFF
-	&__caption
-		// margin-left: 872px
-		margin-top: 3px
-		margin-bottom: 46px
-		width: 242px
-		font-weight: 400
-		font-size: 16px
-		line-height: 19px
-		text-align: right
-		color: #B7B7B7
+
 
 .service
 	padding: 40px 0 52px 0

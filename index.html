@@ -28,39 +28,44 @@
     </header>
 
     <section class="promo" id="up">
-        <!-- <img src="img/man.png" class="promo_img" alt="businessman"> -->
-        <div id="demo">
-            <img class="boke" src="https://source.unsplash.com/user/erondu" alt="фон">
-            <div class="bg-image-cover"></div>
-        </div>
-        <div class="promo__content">
-            <div class="promo__header">
-                <h1><span class="promo__header_orange">Создаем<br></span><span class="promo__header_smaller">рекламу, которая<br></span><span class="promo__header_blue">продает</span></h1>
+        <div class="promo__bg">
+            <div class="promo__wrapper">
+                <video src="video/video_bg.mp4" class="promo__video" autoplay muted loop></video>
             </div>
-            <div class="promo__buttons">
-                <a href="#contacts" class="btn btn_orange btn_promo">Связаться с нами</a>
-                <a href="#case" class="btn btn_blue btn_promo">Посмотреть кейсы</a>
-            </div>
-            <!-- <div class="row">
-                <div class="col-md-5 offset-md-7">
-                    <div class="promo__header">
-                        <h1><span class="promo__header_orange">Создаем<br></span><span class="promo__header_smaller">рекламу, которая<br></span><span class="promo__header_blue">продает</span></h1>
-                    </div> 
-                </div>-->
-                <!-- <div class="col-md-3 offset-md-9">
-                    <div class="promo__subheader">«ЛЮБАЯ РЕКЛАМА ДОЛЖНА ПРИНОСИТЬ ПРИБЫЛЬ.<br>СЧИТАЮ САМЫЕ УСПЕШНЫЕПРОЕКТЫ ТЕ, КОТОРЫЕ ОКУПАЮТСЯ В СОТНИ РАЗ»</div>
-                    <div class="promo__caption">Попырин Вадим основатель «UNIQMEDIA»</div>
+            <div class="promo__content">
+                <div class="promo__header">
+                    <h1><span class="promo__header_orange">Создаем<br></span><span class="promo__header_smaller">рекламу, которая<br></span><span class="promo__header_blue">продает</span></h1>
                 </div>
-                <div class="col-md-6 offset-md-6">
-                    <a href="#contacts" class="btn btn_orange">связаться</a>
-                </div> 
-            </div>-->
+                <div class="promo__buttons">
+                    <a href="#contacts" class="btn btn_orange btn_promo">Связаться с нами</a>
+                    <a href="#case" class="btn btn_blue btn_promo">Посмотреть кейсы</a>
+                </div>
+            </div>
+            <div class="arrow-down">
+                <p class="arrow-down__text">Scroll me</p>
+                <a href="#service" class="arrow-down__img"><img src="icons/long-arrow-down.svg" alt="arrow-down"></a>
+            </div>
+            <div class="promo__link" data-toggle="modal" data-target="#videoModal" data-video="https://www.youtube.com/watch?v=IZGVF_K4jvA&feature=emb_logo">
+                <img src="icons/play.svg" alt="play icon">
+                <p>Showreel</p>
+            </div>
         </div>
-
-        <div class="arrow-down">
-            <p class="arrow-down__text">Scroll me</p>
-            <a href="#service" class="arrow-down__img"><img src="icons/long-arrow-down.svg" alt="arrow-down"></a>
-        </<a>
+        <!-- MODAL -->
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header bg-dark border-dark">
+                    <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body bg-dark p-0">
+                    <!-- BS4 Responsive Embed (https://parrot-tutorial.com/bootstrap4/util_embed.html) -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="service" id="service">
@@ -111,10 +116,12 @@
                 <p>международная сеть автосервисов</p>
             </div>
             <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="case__video">VIDEO</div>
+                <div class="col-lg-7 align-self-center">
+                    <div class="case__video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IZGVF_K4jvA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="case__block">
                         <div class="case__title">задача:</div>
                         <div class="case__descr">Укрепление позитивного образа компании в регионах, социальных сетях. увеличение количества запросов на покупку франшизы
@@ -142,7 +149,7 @@
                 <p>ПРОИЗВОДИТЕЛЬ БУТИЛИРОВАННОЙ ВОДЫ</p>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="case__block">
                         <div class="case__title">задача:</div>
                         <div class="case__descr">Повышение узнаваемости бренда
@@ -159,8 +166,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="case__video">VIDEO</div>
+                <div class="col-lg-7 align-self-center">
+                    <div class="case__video">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -173,10 +182,12 @@
                 <p>ФЕДЕРАЛЬНАЯ РИЭЛТОРСКАЯ КОМПАНИЯ (МОСКВА)</p>
             </div>
             <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="case__video">VIDEO</div>
+                <div class="col-lg-7 align-self-center">
+                    <div class="case__video">
+
+                    </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="case__block">
                         <div class="case__title">задача:</div>
                         <div class="case__descr">
@@ -207,7 +218,7 @@
                 <p>ФЕДЕРАЛЬНАЯ СЕТЬ СТУДИЙ ЛАЗЕРНОЙ ЭПИЛЯЦИИ</p>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
                     <div class="case__block">
                         <div class="case__title">задача:</div>
                         <div class="case__descr">Улучшение качества сервиса и создание продающего видео
@@ -226,8 +237,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="case__video">VIDEO</div>
+                <div class="col-lg-7 align-self-center">
+                    <div class="case__video">
+
+                    </div>
                 </div>
             </div>
         </div>
