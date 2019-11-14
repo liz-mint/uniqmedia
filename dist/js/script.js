@@ -69,4 +69,9 @@ $(document).ready(function () {
             show = false;
         }
     });
+
+    if ($(window).outerWidth() < 991) {
+        console.log('dfhbdf');
+        $('.case .col-lg-5').addClass('order-5');
+    }
 })
