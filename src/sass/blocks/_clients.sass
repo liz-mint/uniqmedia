@@ -1,0 +1,74 @@
+.clients
+    padding: 40px 0 48px 0
+    min-height: 751px
+    background-color: $gray
+    &__header
+        display: block
+        margin: 0 auto
+        margin-top: 26px
+        font-weight: 700
+        font-size: 36px
+        text-transform: uppercase
+        color: #FFFFFF
+        text-align: center
+        &_orange-big
+            font-size: 60px
+            letter-spacing: 0.03em
+            color: $orange
+            margin: 0 25px
+    &__block
+        margin: 0 auto
+        margin-top: 26px
+        img
+            display: block
+            margin: 0 auto
+            width: 95%
+            height: auto
+    &__subheader
+        display: block
+        margin: 0 auto
+        margin-top: 26px
+        font-weight: 400
+        font-size: 26px
+        text-transform: uppercase
+        color: #FFFFFF
+        text-align: center
+        &_blue-bold
+            font-weight: 700
+            color: $blue
+
+@media ( max-width:  991px)
+    .clients
+        min-height: 707px
+        &__header
+            font-size: 32px
+            &_orange-big
+                font-size: 56px
+        &__subheader
+            font-size: 24px
+
+@media (max-width: 767px)
+    .clients
+        min-height: 555px
+        &__header
+            font-size: 28px
+            &_orange-big
+                font-size: 46px
+        &__subheader
+            font-size: 18px
+            line-height: 25px
+            margin-top: 15px
+        &__block
+            img
+                width: 100%
+
+@media (max-width: 575px)
+    .clients
+        min-height: 458px
+        &__header
+            font-size: 23px
+            &_orange-big
+                font-size: 34px
+                display: block
+        &__subheader
+            font-size: 16px

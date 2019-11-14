@@ -1,0 +1,89 @@
+.case
+	min-height: 635px
+	padding: 40px 0 86px 0
+	// box-shadow: inset 0 0 1000px #000
+	background-position: center
+	background-repeat:
+	background-size: cover
+	background-color: #1a1a1a
+	background-attachment: fixed
+	&_1
+		background-image: url('../img/bg/fitservice_bg.png')
+	&_2
+		background-image: url('../img/bg/water_bg.png')
+	&_3
+		background-image: url('../img/bg/floors_bg.png')
+	&_4
+		background-image: url('../img/bg/laserlove_bg.png')
+	&__logo
+		width: 200px
+		margin-right: 35px
+	&__subheader
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 auto
+		margin-top: 40px
+		margin-bottom: 10px
+		p
+			margin: 0
+			font-weight: 400
+			font-size: 24px
+			text-transform: uppercase
+			color: #FFFFFF
+	&__block
+		margin-left: 30px
+		margin-top: 21px
+	&__title
+		font-weight: 700
+		font-size: 22px
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: $blue
+	&__descr
+		margin-top: 3px
+		font-weight: 300
+		font-size: 18px
+		line-height: 21px
+		letter-spacing: 0.01em
+		color: #FFFFFF
+	&__video
+		position: relative
+		padding-bottom: 56.25%
+		// padding-top: 30px
+		height: 0
+		overflow: hidden
+		width: 100%
+		height: auto
+		iframe
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+
+@media (max-width: 767px)
+	.case
+		&__video
+			margin-top: 27px
+		&__logo
+			width: 40%
+		&__subheader
+			p
+				font-size: 20px
+		&__block
+			margin-left: 0
+		&__title
+			font-size: 20px
+
+@media (max-width: 575px)
+	.case
+		&__subheader
+			flex-wrap: wrap
+			p
+				font-size: 18px
+				text-align: center
+				margin-top: 10px
+		&__logo
+			width: 60%
+			margin: 0 auto

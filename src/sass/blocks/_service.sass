@@ -1,0 +1,49 @@
+.service
+	padding: 40px 0 52px 0
+	min-height: 625px
+	// background: url('../img/bg/screen_1_bg.png') center (center / cover) no-repeat
+	background-color: $gray
+	// box-shadow: inset 0 0 100px #000
+	&__block
+		width: 100%
+		margin: 50px 0 25px 0
+	&__title
+		display: inline
+		padding: 5px 10px
+		background-color: $blue
+		font-weight: 700
+		font-size: 26px
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: #FFFFFF
+	&__descr
+		margin-top: 29px
+		font-weight: 300
+		font-size: 19px
+		line-height: 26px
+		letter-spacing: 0.04em
+		text-transform: uppercase
+		color: #FFFFFF
+
+@media ( max-width:  1199px)
+	.service
+		&__title
+			font-size: 22px
+			letter-spacing: 0.03em
+		&__descr
+			font-size: 18px
+
+@media ( max-width: 575px)
+	.service
+		&__block
+			margin-top: 30px
+		&__title
+			display: block
+			padding: 4px 10px
+			font-size: 20px
+			letter-spacing: 0.03em
+			text-align: center
+		&__descr
+			margin-top: 16px
+			font-size: 16px
+			text-align: center

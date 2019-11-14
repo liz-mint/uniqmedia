@@ -1,5 +1,5 @@
 {
-  "name": "uniqmedia",
+  "name": "uniqmedia_1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -7,33 +7,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lizagunina/uber_version_2.git"
+    "url": "git+https://github.com/lizagunina/Uniqmedia.git"
   },
   "author": "lizagunina",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lizagunina/uber_version_2/issues"
+    "url": "https://github.com/lizagunina/Uniqmedia/issues"
   },
-  "homepage": "https://github.com/lizagunina/uber_version_2#readme",
+  "homepage": "https://github.com/lizagunina/Uniqmedia#readme",
+  "description": "",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
+    "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
-    "gulp-cli": "^2.2.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^6.1.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2"
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%",
-    "maintained node versions",
-    "not dead"
-  ],
-  "dependencies": {
-    "jquery-parallax.js": "^1.5.0"
-  },
-  "description": ""
+  }
 }

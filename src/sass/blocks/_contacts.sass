@@ -1,0 +1,105 @@
+.contacts
+    min-height: 477px
+    padding: 40px 0 134px 0
+    background-position: center
+    background-repeat:
+    background-size: cover
+    background-color: $gray
+    background-attachment: fixed
+    background-image: url('../img/bg/contacts_bg.png')
+    &__blocks
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-top: 108px
+        padding: 0 60px
+    &__block
+        margin: 0
+    &__title
+        margin-bottom: 26px
+        font-weight: 700
+        font-size: 30px
+        text-transform: uppercase
+        color: #ffffff
+        &_blue
+            color: $blue
+    &__link
+        margin-top: 18px
+        display: flex
+        align-items: center
+        img
+            width: 32px
+            height: 32px
+            margin-right: 22px
+        a,p
+            font-family: 'Montserrat' , sans-serif
+            font-weight: 400
+            font-size: 28px
+            line-height: 1em
+            text-transform: lowercase
+            color: #FFFFFF
+        a
+            &:hover
+                text-decoration: none
+                cursor: pointer
+
+@media ( max-width:  991px)
+    .contacts
+        padding-bottom: 70px
+        &__blocks
+            margin-top: 49px
+            min-height: 448px
+            padding: 40px 0
+        &__title
+            font-size: 28px
+        &__link
+            img
+                width: 26px
+                height: 26px
+                margin-right: 15px
+            a,p
+                font-size: 26px
+
+@media (max-width: 767px)
+    .contacts
+        min-height: 295px
+        &__blocks
+            padding: 0 50px
+            margin-top: 0
+        &__block
+            margin-top: 50px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            font-size: 24px
+            margin-bottom: 0
+        &__link
+            img
+                width: 24px
+                height: 24px
+                margin-right: 15px
+            a,p
+                font-size: 24px
+
+@media (max-width: 600px)
+    .contacts__blocks
+        flex-direction: column
+
+@media (max-width: 575px)
+    .contacts
+        min-height: 215px
+        &__blocks
+            padding: 0 35px
+        &__block
+            margin-top: 50px
+        &__title
+            font-size: 22px
+            margin-bottom: 8px
+        &__link
+            margin-top: 10px
+            img
+                width: 22px
+                height: 22px
+            a,p
+                font-size: 20px

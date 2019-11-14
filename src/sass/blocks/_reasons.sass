@@ -1,0 +1,95 @@
+.reasons
+	min-height: 660px
+	padding: 40px 0 100px
+	// background: url('../img/bg/why_bg.png') center (center / cover) no-repeat
+	background-color: $gray
+	&__block
+		width: 387px
+		height: 429px
+		margin: 0 auto
+		margin-top: 25px
+		padding: 0
+		transition: 0.5s all
+		&_blue
+			background: rgba(6, 201, 201, 0.1)
+			box-shadow: 0 0 10px $blue
+			&:hover
+				box-shadow: 0 0 20px $blue
+		&_orange
+			background: rgba(255, 120, 8, 0.1)
+			box-shadow: 0 0 10px $orange
+			&:hover
+				box-shadow: 0 0 20px $orange
+			li
+				font-weight: 400
+	&__list
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		height: 100%
+		padding: 37px 0
+		list-style-type: none
+	&__item
+		font-weight: 700
+		font-size: 20px
+		text-transform: uppercase
+		color: #FFFFFF
+		text-align: center
+		&_smaller
+			font-size: 12px
+			font-weight: normal
+	&__title
+		width: 100%
+		height: 51px
+		margin: 0 auto
+		margin-top: 51px
+		&_img
+			padding: 12px 0
+			img
+				display: block
+				margin: 0 auto
+				width: 329px
+		&_other
+			font-weight: 700
+			font-size: 22px
+			line-height: 26px
+			text-align: center
+			text-transform: uppercase
+			color: $orange
+
+@media ( max-width: 991px)
+	.reasons
+		&__block
+			width: 100%
+			height: 385px
+			ul
+				padding: 30px 0
+		&__item
+			font-size: 17px
+		&__title
+			img
+				width: 90%
+			&_other
+				font-size: 20px
+				letter-spacing: 0.1em
+				font-weight: 400
+
+@media (max-width: 767px)
+	.reasons
+		&__title
+			width: 95%
+
+@media ( max-width: 575px)
+	.reasons
+		&__title
+			width: 290px
+		&__block
+			width: 290px
+			height: 300px
+			margin-top: 13px
+		&__item
+			font-size: 15px
+			line-height: 17px
+			&_smaller
+				font-size: 10px
