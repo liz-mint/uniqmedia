@@ -10,9 +10,15 @@ $(document).ready(function () {
 
     $("a[href^='#']").click(function (e) {
         var _href = $(this).attr("href");
-        $("html, body").animate({
-            scrollTop: $(_href).offset().top - $('.header').height()
-        });
+        if (_href == '#promo') {
+            $("html, body").animate({
+                scrollTop: $(_href).offset().top // - $('.header').height()
+            });
+        } else {
+            $("html, body").animate({
+                scrollTop: $(_href).offset().top - $('.header__wrapper').height()
+            });
+        }
         e.preventDefault();
         return false;
     });

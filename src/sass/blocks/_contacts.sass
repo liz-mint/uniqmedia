@@ -1,8 +1,8 @@
 .contacts
     min-height: 477px
     padding: 40px 0 134px 0
-    background-position: center
-    background-repeat:
+    background-position: center center
+    background-repeat: no-repeat
     background-size: cover
     background-color: $gray
     background-attachment: fixed
@@ -48,7 +48,6 @@
         padding-bottom: 70px
         &__blocks
             margin-top: 49px
-            min-height: 448px
             padding: 40px 0
         &__title
             font-size: 28px
@@ -62,6 +61,8 @@
 
 @media (max-width: 767px)
     .contacts
+        background-image: url('../img/bg_min/contacts_bg_mobile.png')
+        background-attachment: scroll
         min-height: 295px
         &__blocks
             padding: 0 50px

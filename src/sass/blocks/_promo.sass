@@ -95,6 +95,16 @@
 
 @media (max-width: 767px)
 	.promo
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		background-color: #111111
+		background-image: url('../img/bg_min/promo_bg_mobile.png')
+		&__bg
+			&::after
+				display: none
+		&__video
+			display: none
 		&__header
 			h1
 				font-size: 56px
